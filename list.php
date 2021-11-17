@@ -100,7 +100,9 @@ try{
             if($page == 1){ 
                 echo $x; 
             } else { 
+                echo ' ';
                 echo '<a href=?page='. $x. '&name='. $name.'>'. $x. '</a>'; 
+                echo ' ';
             } 
         } 
         ?> 
