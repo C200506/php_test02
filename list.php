@@ -26,7 +26,7 @@ $dbh = db_conn();
 $data = [];
 
 try{
-    $sql = "SELECT * FROM user WHERE name like :name LIMIT :start, :page"
+    $sql = "SELECT * FROM user WHERE name like :name LIMIT :start, :page";
     $stmt = $dbh->prepare($sql); 
     $stmt->bindValue(':name', '%'.$name.'%', PDO::PARAM_STR); 
     $stmt->bindValue(':start', $start, PDO::PARAM_INT); 
